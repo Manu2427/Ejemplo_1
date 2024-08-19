@@ -1,0 +1,15 @@
+nav {
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(136, 125, 125);
+}
+ul
+{
+    list-style: none;
+    display: flex;
+}
+ul li a
+{
+    text-decoration: none;
+    
+}

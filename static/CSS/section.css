@@ -1,0 +1,21 @@
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    align-self: center;
+    width: 100vw;
+    height: 70vh;
+    background-color: aqua;
+}
+
+.logo {
+    align-self: center;
+    background-color: green;
+    width: 10vw;
+    height: 20vh;
+}
+
+.eslogan {
+    align-self: center;
+}
