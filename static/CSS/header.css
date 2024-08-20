@@ -1,5 +1,9 @@
 header {
     width: 100vw; 
-    height: 50vh;
-    background-color: red;
+    height: 72vh;
+    /*background-color: red;*/
+}
+
+@media (max-width: 522px) {
+    
 }
