@@ -1,0 +1,26 @@
+
+.columna_filtros {
+    width: 20%;
+    height: 100%;
+    background-color: aqua;
+}
+
+.categoria {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    background-color: green;
+}
+
+.title {
+    align-self: center;
+    justify-content: flex-start;
+}
+
+.mostrar_categorias {
+    width: 10px;
+    height: 10px;
+    align-self: center;
+    justify-self: end;
+    background-color: black;
+}
