@@ -9,18 +9,37 @@
     width: 100%;
     height: 15%;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: green;
 }
 
 .title {
+    margin:0 0 0 5px;
     align-self: center;
-    justify-content: flex-start;
 }
 
 .mostrar_categorias {
-    width: 10px;
-    height: 10px;
+    width: 30px;
+    height: 30px;
+    margin:0 5px 0 0;
     align-self: center;
-    justify-self: end;
     background-color: black;
 }
+
+.linea_horizantal {
+    position: relative;
+    left: 12.5px;
+    width: 5px;
+    height: 30px;
+    background-color: white;
+}
+
+.linea_vertical {
+    position: relative;
+    bottom: 17px;
+    width: 30px;
+    height: 5px;
+    background-color: white;
+}
+

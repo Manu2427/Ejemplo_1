@@ -19,6 +19,7 @@ nav ul
 }
 nav ul li {
     height: 6vh;
+    /* width: 30%; */
 }
 
 ul li a
@@ -87,7 +88,7 @@ button
     z-index: 999;
     background-color: rgba(37, 37, 37, 0.336);
     box-shadow: -10px 0 10px rgba(0,0,0,0.1);
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
@@ -104,4 +105,19 @@ button
 {
     width: 100%;
 
+}
+
+@media(max-width:800px){
+    .hideOnMobile
+    {
+        display: none;
+    }
+
+}
+
+@media(max-width:450px){
+    .sidebar
+    {
+        width: 100%;
+    }
 }

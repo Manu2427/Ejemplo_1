@@ -16,6 +16,7 @@
     <header class="menu">
         <nav class="list">
             <ul class="sidebar">
+                <li onclick=hideSidebbar()> <a href="#"> </a> </li>
                 <li> <a href="#"> caballero</a> </li>
                 <li> <a href="#"> dama</a> </li>
                 <li> <a href="#"> niño</a> </li>
@@ -25,22 +26,22 @@
             </ul>
 
             <ul class="menu_list">
-                <li> <a href="#"> caballero</a> </li>
-                <li> <a href="#"> dama</a> </li>
-                <li> <a href="#"> niño</a> </li>
-                <li> <a href="#"> niña</a> </li>
-                <li> <a href="#"> hola</a> </li>
-                <li> <a href="#"> hola</a> </li>
-                <li> <a href="#"> </a> </li>
+                <li class="hideOnMobile"> <a href="#"> caballero</a> </li>
+                <li class="hideOnMobile"> <a href="#"> dama</a> </li>
+                <li class="hideOnMobile"> <a href="#"> niño</a> </li>
+                <li class="hideOnMobile"> <a href="#"> niña</a> </li>
+                <li class="hideOnMobile"> <a href="#"> hola</a> </li>
+                <li class="hideOnMobile"> <a href="#"> hola</a> </li>
+                <li onclick=showSidebar()> <a href="#">  </a> </li>
             </ul>
 
-            <div class="buscador">
+            <!-- <div class="buscador">
                 <input type="text" placeholder="Buscar...">
                 <button> 
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
                 
-            </div>
+            </div> -->
 
 
         </nav>
@@ -54,51 +55,68 @@
     </header>
 
 
-    <main class="seccion_ventas">
+<main class="seccion_ventas">
 
         <div class="columna_filtros">
             <div class="categoria">
                 <p class="title"> COLOR </p>
-                <div class="mostrar_categorias">a</div>
+                <div class="mostrar_categorias">
+                    <div class="linea_horizantal"></div>
+                    <div class="linea_vertical"></div>
+                </div>
             </div>
         </div>
         
-        <div class="gorras">
-            
-            <a href="nose" class="enlace-de-gorra">
-                <div class="gorra"> <p class="Descripcion">Descripcion</p> </div>
-            
-            </a>
-
-            <a href="nose" class="enlace-de-gorra">
-                <div class="gorra"> <p class="Descripcion">Descripcion</p> </div>
-            
-            </a>
-
-            <a href="nose" class="enlace-de-gorra">
-                <div class="gorra"> <p class="Descripcion">Descripcion</p> </div>
-            
-            </a>
-
-            <a href="nose" class="enlace-de-gorra">
-                <div class="gorra"> <p class="Descripcion">Descripcion</p> </div>
-            
-            </a>
-
-            <a href="nose" class="enlace-de-gorra">
-                <div class="gorra"> <p class="Descripcion">Descripcion</p> </div>
-            
-            </a>
-
-            <a href="nose" class="enlace-de-gorra">
-                <div class="gorra"> <p class="Descripcion">Descripcion</p> </div>
-            
-            </a>
-
-        </div>
+    <div class="columna-gorras">
         
        
-    </main>
+            <div class="contenedor_gorras">
+              <a href="nose" class="enlace-de-gorra">
+                <div class="gorra"> <p class="Descripcion">Descripcion</p> </div>
+            
+              </a>
 
+              <a href="nose" class="enlace-de-gorra">
+                <div class="gorra"> <p class="Descripcion">Descripcion</p> </div>
+            
+              </a>
+
+            <a href="nose" class="enlace-de-gorra">
+                <div class="gorra"> <p class="Descripcion">Descripcion</p> </div>
+            
+            </a>
+
+            <a href="nose" class="enlace-de-gorra">
+                <div class="gorra"> <p class="Descripcion">Descripcion</p> </div>
+            
+            </a>
+
+            <a href="nose" class="enlace-de-gorra">
+                <div class="gorra"> <p class="Descripcion">Descripcion</p> </div>
+            
+            </a>
+
+            <a href="nose" class="enlace-de-gorra">
+                <div class="gorra"> <p class="Descripcion">Descripcion</p> </div>
+            
+            </a>
+        </div>
+
+       
+
+    </div>
+           
+</main>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display ='flex'
+        }
+        function hideSidebbar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display ='none'
+        }
+    </script>
 </body>
+
 </html>
