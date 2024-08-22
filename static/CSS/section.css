@@ -1,32 +1,67 @@
 section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    margin-top: 0;
+    /* align-items: center; */
     width: 100%;
     height: 66vh;
-    background-color: rgb(138, 138, 138);
+    /* background-image: url("../IMG/gorra_perrona.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 80vh; */
 }
 
 .logo {
-    align-self: center;
+    /* align-self: center; */
     background-color: green;
-    width: 150px;
-    height: 150px;
-    margin-top: 15vh;
-    margin-bottom: 10vh;
-    background-image: url(../IMG/c506443d-e6a7-47be-bd6b-66e2f3603789.jpg);
-    background-size: contain;
+    width: 250px;
+    height: 250px;
+    margin-top: 22vh;
+    margin-left: 47vw;
+    /* margin-bottom: 10vh; */
+    background-image: url("../IMG/forever_hats.png");
+    background-size: cover;
 }
 
 .eslogan {
+    text-align: center;
+    color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 4rem;
+    font-size: 5rem;
+    letter-spacing: 15px;
+    margin-top: -42vh;
 } 
+
+@media (max-width: 1500px) 
+{
+    .logo {
+            width: 200px;
+            height: 200px;           
+    }
+}
+
+@media (max-width: 1250px) 
+{
+    .logo {
+            width: 150px;
+            height: 150px;           
+    }
+}
+@media (max-width: 950px) 
+{
+    .logo {
+            width: 100px;
+            height: 100px;           
+    }
+}
+
 
 @media (max-height: 600px) {
     .logo {
         width: 110px;
         height: 110px;        
+    }
+    .eslogan {
+        font-size: 2.5rem;
     }
 }
 
@@ -58,11 +93,6 @@ section {
     }
 }
 
-@media (max-width:600px) {
-    .eslogan {
-        font-size: 2.5rem;
-    }
-}
 
 @media ((max-width:480px)) {
     .eslogan {

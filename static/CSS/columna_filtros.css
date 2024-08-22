@@ -7,7 +7,7 @@
 
 .categoria {
     width: 100%;
-    height: 15%;
+    height: 10%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -25,21 +25,29 @@
     margin:0 5px 0 0;
     align-self: center;
     background-color: black;
+    position: relative;
+    display: flex;
+    z-index: 20;
 }
 
-.linea_horizantal {
-    position: relative;
-    left: 12.5px;
-    width: 5px;
-    height: 30px;
+.linea_horizontal {
+    /* position: absolute;
+    top: 13px; */
+    align-self: center;
+    justify-self: center;
+    width: 30px;
+    height: 5px;
     background-color: white;
 }
 
 .linea_vertical {
-    position: relative;
-    bottom: 17px;
-    width: 30px;
-    height: 5px;
+    position: absolute;
+    left: 12.5px;
+    width: 5px;
+    height: 30px;
     background-color: white;
+    transform: rotate(0);
+    transition-property: transform;
+    transition-duration: 1s;
 }
 

@@ -10,11 +10,12 @@
     <link href="static/CSS/nav.css" rel="stylesheet">
     <link href="static/CSS/gorras.css" rel="stylesheet">
     <link href="static/CSS/columna_filtros.css" rel="stylesheet">
+    <link href="static/CSS/seccion_ventas.css" rel="stylesheet">
 </head>
 <body>
     
     <header class="menu">
-        <nav class="list">
+        <nav id="navegacion" class="list">
             <ul class="sidebar">
                 <li onclick=hideSidebbar()> <a href="#"> </a> </li>
                 <li> <a href="#"> caballero</a> </li>
@@ -50,19 +51,19 @@
 
         <section>
             <div class="logo"></div> <!-- logo -->
-            <p class="eslogan"> Gorras para tu cabeza! </p>     <!-- Eslogan -->   
+            <p class="eslogan">Angelo's Hats</p>     <!-- Eslogan -->   
         </section>
     </header>
 
 
-<main class="seccion_ventas">
+    <main class="seccion_ventas">
 
         <div class="columna_filtros">
             <div class="categoria">
                 <p class="title"> COLOR </p>
-                <div class="mostrar_categorias">
-                    <div class="linea_horizantal"></div>
-                    <div class="linea_vertical"></div>
+                <div id="box_btn" class="mostrar_categorias">
+                    <div class="linea_horizontal"></div>
+                    <div id="vertical_line" class="linea_vertical"></div>
                 </div>
             </div>
         </div>
@@ -107,6 +108,7 @@
     </div>
            
 </main>
+    <script src="static/JS/mostrar_categorias.js"></script>
     <script>
         function showSidebar(){
             const sidebar = document.querySelector('.sidebar')
