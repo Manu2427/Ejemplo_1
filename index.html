@@ -36,6 +36,10 @@
                 <li onclick=showSidebar()> <a href="#">  </a> </li>
             </ul>
 
+            <div class="search">
+                <div class="icon"></div>
+                <div class="input"></div>
+            </div>
             <!-- <div class="buscador">
                 <input type="text" placeholder="Buscar...">
                 <button> 
@@ -50,7 +54,7 @@
    
 
         <section>
-            <div class="logo"></div> <!-- logo -->
+            <!-- <div class="logo"></div> logo -->
             <p class="eslogan">Angelo's Hats</p>     <!-- Eslogan -->   
         </section>
     </header>
@@ -59,48 +63,183 @@
     <main class="seccion_ventas">
 
         <div class="columna_filtros">
+
             <div class="categoria">
                 <p class="title"> COLOR </p>
-                <div id="box_btn" class="mostrar_categorias">
+                <div class="mostrar_categorias box_btn">
                     <div class="linea_horizontal"></div>
-                    <div id="vertical_line" class="linea_vertical"></div>
+                    <div class="linea_vertical vertical_line"></div>
                 </div>
             </div>
+
+            <div class="options">
+                <div class="option">
+                    <input class="radio_btn" type="radio" name="btn_color" value="COLORDESUSOJOS"> <label> El color de sus ojos </label>
+                </div>
+                <div class="option">
+                    <input class="radio_btn" type="radio" name="btn_color" value="AZUL"> <label> Azul </label>
+                </div>
+                <div class="option">
+                    <input class="radio_btn" type="radio" name="btn_color" value="AMARILLO"> <label> Amarillo </label>
+                </div>
+                <div class="option">
+                    <input class="radio_btn" type="radio" name="btn_color" value="COLORDESUSLABIOS"> <label> El color de sus labios </label>
+                </div>
+            </div>
+
+            <div class="categoria">
+                <p class="title"> TALLA </p>
+                <div class="mostrar_categorias box_btn">
+                    <div class="linea_horizontal"></div>
+                    <div class="linea_vertical vertical_line"></div>
+                </div>
+            </div>
+
+            <div class="options">
+                <div class="option">
+                    <input class="radio_btn" type="radio" name="btn_talla" value="L"> <label> L </label>
+                </div>
+                <div class="option">
+                    <input class="radio_btn" type="radio" name="btn_talla" value="XL"> <label> XL </label>
+                </div>
+                <div class="option">
+                    <input class="radio_btn" type="radio" name="btn_talla" value="XXL"> <label> XXL </label>
+                </div>
+                <div class="option">
+                    <input class="radio_btn" type="radio" name="btn_talla" value="XXXL"> <label> XXXL </label>
+                </div>
+            </div>
+
+            <div class="categoria">
+                <p class="title"> PRECIO </p>
+                <div class="mostrar_categorias box_btn">
+                    <div class="linea_horizontal"></div>
+                    <div class="linea_vertical vertical_line"></div>
+                </div>
+            </div>
+
+            <div class="options">
+                <div class="contenedor_rango_precios">
+                    <label> $ </label> <input type="range" class="rango_precios" name="rango_precios" min="199" max="5999"> <label> $$$ </label>
+                </div>
+            </div>
+
+            <div class="categoria">
+                <p class="title"> CATEGORIA </p>
+                <div class="mostrar_categorias box_btn">
+                    <div class="linea_horizontal"></div>
+                    <div class="linea_vertical vertical_line"></div>
+                </div>
+            </div>
+
+            <div class="options">
+                <div class="option">
+                    <input class="radio_btn" type="radio" name="btn_categoria" value="GORRA"> <label> Gorra </label>
+                </div>
+                <div class="option">
+                    <input class="radio_btn" type="radio" name="btn_categoria" value="SOMBRERO"> <label> Sombrero </label>
+                </div>
+                <div class="option">
+                    <input class="radio_btn" type="radio" name="btn_categoria" value="BOINA"> <label> Boina </label>
+                </div>
+                <div class="option">
+                    <input class="radio_btn" type="radio" name="btn_categoria" value="ZAPATO"> <label> Zapato </label>
+                </div>
+            </div>
+
         </div>
         
     <div class="columna-gorras">
         
        
             <div class="contenedor_gorras">
-              <a href="nose" class="enlace-de-gorra">
-                <div class="gorra"> <p class="Descripcion">Descripcion</p> </div>
-            
-              </a>
 
-              <a href="nose" class="enlace-de-gorra">
-                <div class="gorra"> <p class="Descripcion">Descripcion</p> </div>
-            
-              </a>
+                <div class="gorra">
+                    
+                    <a href="#">
+                        <div class="imgg"></div>
+                    </a>
 
-            <a href="nose" class="enlace-de-gorra">
-                <div class="gorra"> <p class="Descripcion">Descripcion</p> </div>
-            
-            </a>
+                    <div class="detalle">
 
-            <a href="nose" class="enlace-de-gorra">
-                <div class="gorra"> <p class="Descripcion">Descripcion</p> </div>
-            
-            </a>
+                        <p class="Descripcion">Descripcion</p>
 
-            <a href="nose" class="enlace-de-gorra">
-                <div class="gorra"> <p class="Descripcion">Descripcion</p> </div>
-            
-            </a>
+                    </div>
+         
+                </div>
 
-            <a href="nose" class="enlace-de-gorra">
-                <div class="gorra"> <p class="Descripcion">Descripcion</p> </div>
+                <div class="gorra2">
+                    
+                    <a href="#">
+                        <div class="imgg2"></div>
+                    </a>
+
+                    <div class="detalle2">
+
+                        <p class="Descripcion">Descripcion</p>
+
+                    </div>
+         
+                </div>
+                
+                <div class="gorra3">
+                    
+                    <a href="#">
+                        <div class="imgg3"></div>
+                    </a>
+
+                    <div class="detalle3">
+
+                        <p class="Descripcion">Descripcion</p>
+
+                    </div>
+         
+                </div>
+
+                <div class="gorra4">
+                    
+                    <a href="#">
+                        <div class="imgg4"></div>
+                    </a>
+
+                    <div class="detalle4">
+
+                        <p class="Descripcion">Descripcion</p>
+
+                    </div>
+         
+                </div>
+
+                <div class="gorra5">
+                    
+                    <a href="#">
+                        <div class="imgg5"></div>
+                    </a>
+
+                    <div class="detalle5">
+
+                        <p class="Descripcion">Descripcion</p>
+
+                    </div>
+         
+                </div>
+
+                <div class="gorra6">
+                    
+                    <a href="#">
+                        <div class="imgg6"></div>
+                    </a>
+
+                    <div class="detalle6">
+
+                        <p class="Descripcion">Descripcion</p>
+
+                    </div>
+         
+                </div>
+
+                
             
-            </a>
         </div>
 
        
@@ -119,6 +258,8 @@
             sidebar.style.display ='none'
         }
     </script>
+
+<script src="https://kit.fontawesome.com/f65617cdb1.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

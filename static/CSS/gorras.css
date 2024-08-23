@@ -16,28 +16,68 @@
 
 
 .contenedor_gorras {
-    max-width:80%;
-    margin:100px auto;
+    max-width:100%;
+    /* margin:100px auto; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     /* height: fit-content;
     display: flex; */
-    columns:3 350px;
-    gap: 15px;
+    /* columns:3 350px;
+    gap: 15px; */
+    height: 90vh;
 }
 
 
 
- .gorra {
-    background-image: url(/static/IMG/c506443d-e6a7-47be-bd6b-66e2f3603789.jpg);
-    background-size: 100% 70%;
-    background-repeat: no-repeat; 
-    height: 300px; 
-    width: 350px;
-    background-color: white; 
-    /* margin: 60px 60px; */
-    /* display: inline-block; */
+.gorra, .gorra2, .gorra3, .gorra4, .gorra5, .gorra6
+{
+    background-color: rgb(201, 201, 201);
+    height: 430px; 
+    width: 380px;
     font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms;
+    border-radius: 1%;
+    margin: 45px;
+    position: relative;
+    /* filter: drop-shadow(4px 4px 5px #4e504f); */
     
 } 
+
+.imgg
+{
+    height: 430px;
+    width: 380px;
+    background-image: url(/static/IMG/gorra_gris.png);
+    background-size: 380px 300px;
+    background-repeat: no-repeat;
+    /* margin-bottom:190px; */
+    transition: 300ms;
+    border-radius: 2%;
+    /* border: solid black 1px; */
+    /* filter: drop-shadow(5px 4px 10px #000); */
+}
+.detalle
+{
+    height: 100px;
+    width: 380px;
+    background-color: rgb(141, 139, 139);
+    position: absolute;
+    bottom: 0;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+    margin-top: 150px;
+    /* z-index: 2; */
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    transition: 300ms;
+}
+
+
 
 .Descripcion {
     margin: 12px;

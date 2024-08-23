@@ -1,8 +1,8 @@
 header {
     width: 100%; 
-    height: 72vh;
+    height: 100vh;
     /*background-color: red;*/
-    background-image: url("../IMG/gorra_perrona.jpeg");
+    background-image: url("../IMG/gorra_con_logo.jpeg");
     background-repeat: no-repeat;
     background-size: 100% 80vh;
 }

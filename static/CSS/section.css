@@ -1,13 +1,7 @@
 section {
-    /* display: flex; */
-    /* flex-direction: column; */
     margin-top: 0;
-    /* align-items: center; */
     width: 100%;
     height: 66vh;
-    /* background-image: url("../IMG/gorra_perrona.jpeg");
-    background-repeat: no-repeat;
-    background-size: 100% 80vh; */
 }
 
 .logo {
@@ -18,7 +12,7 @@ section {
     margin-top: 22vh;
     margin-left: 47vw;
     /* margin-bottom: 10vh; */
-    background-image: url("../IMG/forever_hats.png");
+    background-image: url("../IMG/gorra_perrona.jpeg");
     background-size: cover;
 }
 
@@ -28,14 +22,30 @@ section {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 5rem;
     letter-spacing: 15px;
-    margin-top: -42vh;
+    margin-top: 7vh;
 } 
+
+
+@media (max-width: 1700px) {
+    .logo {
+        width: 170px;
+        height: 170px;           
+}
+.eslogan
+{
+    margin-top: 5vh;
+}
+}
 
 @media (max-width: 1500px) 
 {
     .logo {
             width: 200px;
             height: 200px;           
+    }
+    .eslogan
+    {
+        margin-top: 6vh;
     }
 }
 
@@ -45,13 +55,40 @@ section {
             width: 150px;
             height: 150px;           
     }
+
+    .eslogan
+    {
+        margin-top: 6vh;
+        font-size: 4.5rem;
+    }
 }
 @media (max-width: 950px) 
 {
     .logo {
-            width: 100px;
-            height: 100px;           
+            width: 130px;
+            height: 130px;           
     }
+
+    .eslogan
+{
+    /* margin-top: -27vh; */
+    font-size: 4rem;
+}
+
+    
+}
+
+@media (max-width: 600px) {
+    .logo {
+        width: 100px;
+        height: 100px;           
+}
+
+.eslogan
+{
+    /* margin-top: -24vh; */
+    font-size: 3rem;
+}
 }
 
 
@@ -65,33 +102,69 @@ section {
     }
 }
 
+/* @media (max-height: 860px) {
+    .eslogan
+{
+    margin-top: -27vh;
+    font-size: 3rem;
+}
+} */
+@media (max-height: 540px) {
+    .eslogan
+    {
+        margin-top: -36vh;
+        font-size: 2.7rem;
+    }
+}
+
 @media (max-height: 470px) {
     section {
-        display: flex;
+        margin-top: 0vh;
+        /* display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
-        width: 100vw;
-        height: 70vh;
-        background-color: rgb(138, 138, 138);
+        justify-content: space-evenly; */
+        width: 100%;
+        height: 100vh;
+        /* background-color: rgb(138, 138, 138); */
     }
     .logo {
         width: 100px;
-        height: 100px;        
+        height: 100px;
+        margin-top:45vh ;        
+    }
+    .eslogan
+    {
+        margin-top: -40vh;
+        font-size: 2rem;
+    }
+}
+@media (max-height: 400px) {
+    .eslogan
+    {
+        margin-top: -44vh;
+        font-size: 1.5rem;
     }
 }
 
 @media (max-height: 300px) {
     .logo {
-        width: 90px;
-        height: 90px; 
+        width: 70px;
+        height: 70px; 
+        margin-top: 42vh;
+    }
+    .eslogan
+    {
+        margin-top: -40vh;
+        font-size: 1.5rem;
     }
 } 
 
-@media ((max-width:800px)) {
+
+/* @media ((max-width:800px)) {
     .eslogan {
         font-size: 3rem;
     }
-}
+} */
 
 
 @media ((max-width:480px)) {
