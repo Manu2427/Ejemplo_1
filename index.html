@@ -17,7 +17,7 @@
     <header class="menu">
         <nav id="navegacion" class="list">
             <ul class="sidebar">
-                <li onclick=hideSidebbar()> <a href="#"> </a> </li>
+                <li onclick=hideSidebbar()> <a href="#"><i class="fa-solid fa-x"></i> </a> </li>
                 <li> <a href="#"> caballero</a> </li>
                 <li> <a href="#"> dama</a> </li>
                 <li> <a href="#"> niño</a> </li>
@@ -33,7 +33,7 @@
                 <li class="hideOnMobile"> <a href="#"> niña</a> </li>
                 <li class="hideOnMobile"> <a href="#"> hola</a> </li>
                 <li class="hideOnMobile"> <a href="#"> hola</a> </li>
-                <li onclick=showSidebar()> <a href="#">  </a> </li>
+                <li onclick=showSidebar()> <a href="#"><i class="fa-solid fa-bars"></i>  </a> </li>
             </ul>
 
             <div class="search">
@@ -55,7 +55,7 @@
 
         <section>
             <!-- <div class="logo"></div> logo -->
-            <p class="eslogan">Angelo's Hats</p>     <!-- Eslogan -->   
+            <p class="eslogan">Angelo's Hats</p> 
         </section>
     </header>
 
@@ -64,87 +64,106 @@
 
         <div class="columna_filtros">
 
-            <div class="categoria">
-                <p class="title"> COLOR </p>
-                <div class="mostrar_categorias box_btn">
-                    <div class="linea_horizontal"></div>
-                    <div class="linea_vertical vertical_line"></div>
+            <div id="color" class="categoria">
+                <div class="face">
+                    <p class="title"> COLOR </p>
+                    <div class="mostrar_categorias box_btn">
+                        <div class="linea_horizontal"></div>
+                        <div class="linea_vertical"></div>
+                    </div>
                 </div>
+
+                <div class="options">
+                    <div class="option">
+                        <input class="radio_btn" type="radio" name="btn_color" value="COLORDESUSOJOS"> <label> El color de sus ojos </label>
+                    </div>
+                    <div class="option">
+                        <input class="radio_btn" type="radio" name="btn_color" value="AZUL"> <label> Azul </label>
+                    </div>
+                    <div class="option">
+                        <input class="radio_btn" type="radio" name="btn_color" value="AMARILLO"> <label> Amarillo </label>
+                    </div>
+                    <div class="option">
+                        <input class="radio_btn" type="radio" name="btn_color" value="COLORDESUSLABIOS"> <label> El color de sus labios </label>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="options">
-                <div class="option">
-                    <input class="radio_btn" type="radio" name="btn_color" value="COLORDESUSOJOS"> <label> El color de sus ojos </label>
+            
+
+            <div id="size" class="categoria">
+
+                <div class="face">
+                    <p class="title"> TALLA </p>
+                    <div class="mostrar_categorias box_btn">
+                        <div class="linea_horizontal"></div>
+                        <div class="linea_vertical vertical_line"></div>
+                    </div>
                 </div>
-                <div class="option">
-                    <input class="radio_btn" type="radio" name="btn_color" value="AZUL"> <label> Azul </label>
+
+                <div class="options">
+                    <div class="option">
+                        <input class="radio_btn" type="radio" name="btn_talla" value="L"> <label> L </label>
+                    </div>
+                    <div class="option">
+                        <input class="radio_btn" type="radio" name="btn_talla" value="XL"> <label> XL </label>
+                    </div>
+                    <div class="option">
+                        <input class="radio_btn" type="radio" name="btn_talla" value="XXL"> <label> XXL </label>
+                    </div>
+                    <div class="option">
+                        <input class="radio_btn" type="radio" name="btn_talla" value="XXXL"> <label> XXXL </label>
+                    </div>
                 </div>
-                <div class="option">
-                    <input class="radio_btn" type="radio" name="btn_color" value="AMARILLO"> <label> Amarillo </label>
-                </div>
-                <div class="option">
-                    <input class="radio_btn" type="radio" name="btn_color" value="COLORDESUSLABIOS"> <label> El color de sus labios </label>
-                </div>
+
             </div>
 
-            <div class="categoria">
-                <p class="title"> TALLA </p>
-                <div class="mostrar_categorias box_btn">
-                    <div class="linea_horizontal"></div>
-                    <div class="linea_vertical vertical_line"></div>
+            <div id="price" class="categoria">
+
+                <div class="face">
+                    <p class="title"> PRECIO </p>
+                    <div class="mostrar_categorias box_btn">
+                        <div class="linea_horizontal"></div>
+                        <div class="linea_vertical vertical_line"></div>
+                    </div>
                 </div>
+
+                <div class="options">
+                    <div class="contenedor_rango_precios">
+                        <label> $ </label> <input type="range" class="rango_precios" name="rango_precios" min="199" max="5999"> <label> $$$ </label>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="options">
-                <div class="option">
-                    <input class="radio_btn" type="radio" name="btn_talla" value="L"> <label> L </label>
-                </div>
-                <div class="option">
-                    <input class="radio_btn" type="radio" name="btn_talla" value="XL"> <label> XL </label>
-                </div>
-                <div class="option">
-                    <input class="radio_btn" type="radio" name="btn_talla" value="XXL"> <label> XXL </label>
-                </div>
-                <div class="option">
-                    <input class="radio_btn" type="radio" name="btn_talla" value="XXXL"> <label> XXXL </label>
-                </div>
-            </div>
+            
 
-            <div class="categoria">
-                <p class="title"> PRECIO </p>
-                <div class="mostrar_categorias box_btn">
-                    <div class="linea_horizontal"></div>
-                    <div class="linea_vertical vertical_line"></div>
-                </div>
-            </div>
+            <div id="category" class="categoria">
 
-            <div class="options">
-                <div class="contenedor_rango_precios">
-                    <label> $ </label> <input type="range" class="rango_precios" name="rango_precios" min="199" max="5999"> <label> $$$ </label>
+                <div class="face">
+                    <p class="title"> CATEGORIA </p>
+                    <div class="mostrar_categorias box_btn">
+                        <div class="linea_horizontal"></div>
+                        <div class="linea_vertical vertical_line"></div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="categoria">
-                <p class="title"> CATEGORIA </p>
-                <div class="mostrar_categorias box_btn">
-                    <div class="linea_horizontal"></div>
-                    <div class="linea_vertical vertical_line"></div>
+                <div class="options">
+                    <div class="option">
+                        <input class="radio_btn" type="radio" name="btn_categoria" value="GORRA"> <label> Gorra </label>
+                    </div>
+                    <div class="option">
+                        <input class="radio_btn" type="radio" name="btn_categoria" value="SOMBRERO"> <label> Sombrero </label>
+                    </div>
+                    <div class="option">
+                        <input class="radio_btn" type="radio" name="btn_categoria" value="BOINA"> <label> Boina </label>
+                    </div>
+                    <div class="option">
+                        <input class="radio_btn" type="radio" name="btn_categoria" value="ZAPATO"> <label> Zapato </label>
+                    </div>
                 </div>
-            </div>
-
-            <div class="options">
-                <div class="option">
-                    <input class="radio_btn" type="radio" name="btn_categoria" value="GORRA"> <label> Gorra </label>
-                </div>
-                <div class="option">
-                    <input class="radio_btn" type="radio" name="btn_categoria" value="SOMBRERO"> <label> Sombrero </label>
-                </div>
-                <div class="option">
-                    <input class="radio_btn" type="radio" name="btn_categoria" value="BOINA"> <label> Boina </label>
-                </div>
-                <div class="option">
-                    <input class="radio_btn" type="radio" name="btn_categoria" value="ZAPATO"> <label> Zapato </label>
-                </div>
+                
             </div>
 
         </div>
@@ -162,7 +181,8 @@
 
                     <div class="detalle">
 
-                        <p class="Descripcion">Descripcion</p>
+                        <p class="nombre">Gorra placosona pariente</p>
+                        <p class="precio">$700</p>
 
                     </div>
          
@@ -171,12 +191,13 @@
                 <div class="gorra2">
                     
                     <a href="#">
-                        <div class="imgg2"></div>
+                        <div class="imgg"></div>
                     </a>
 
                     <div class="detalle2">
 
-                        <p class="Descripcion">Descripcion</p>
+                        <p class="nombre">Gorra placosona pariente</p>
+                        <p class="precio">$700</p>
 
                     </div>
          
@@ -185,12 +206,13 @@
                 <div class="gorra3">
                     
                     <a href="#">
-                        <div class="imgg3"></div>
+                        <div class="imgg"></div>
                     </a>
 
                     <div class="detalle3">
 
-                        <p class="Descripcion">Descripcion</p>
+                        <p class="nombre">Gorra placosona pariente</p>
+                        <p class="precio">$700</p>
 
                     </div>
          
@@ -199,13 +221,13 @@
                 <div class="gorra4">
                     
                     <a href="#">
-                        <div class="imgg4"></div>
+                        <div class="imgg"></div>
                     </a>
 
                     <div class="detalle4">
 
-                        <p class="Descripcion">Descripcion</p>
-
+                        <p class="nombre">Gorra placosona pariente</p>
+                        <p class="precio">$700</p>
                     </div>
          
                 </div>
@@ -213,12 +235,13 @@
                 <div class="gorra5">
                     
                     <a href="#">
-                        <div class="imgg5"></div>
+                        <div class="imgg"></div>
                     </a>
 
                     <div class="detalle5">
 
-                        <p class="Descripcion">Descripcion</p>
+                        <p class="nombre">Gorra placosona pariente</p>
+                        <p class="precio">$700</p>
 
                     </div>
          
@@ -227,12 +250,13 @@
                 <div class="gorra6">
                     
                     <a href="#">
-                        <div class="imgg6"></div>
+                        <div class="imgg"></div>
                     </a>
 
                     <div class="detalle6">
 
-                        <p class="Descripcion">Descripcion</p>
+                        <p class="nombre">Gorra placosona pariente</p>
+                        <p class="precio">$700</p>
 
                     </div>
          
