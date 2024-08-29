@@ -16,6 +16,7 @@ function alerta (e) {
 
 for (let i = 0; i < boxes.length; i++) {
     boxes[i].addEventListener("click", alerta)
+    
         // function (e) {
         // const lineas = document.getElementsByClassName("vertical_line")
         // if (click[i] == false) {
