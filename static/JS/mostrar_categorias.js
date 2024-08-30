@@ -1,39 +1,36 @@
 
 const boxes = document.getElementsByClassName("box_btn")
-const options = document.getElementsByClassName("options")
-let click = [false, false, false, false]
 
 function alerta (e) {
     let target = e.target
     let lineaVertical = target.querySelector(".linea_vertical")
     let parent = target.parentElement.parentElement
-    let options = parent.querySelector(".options")
-    options.style.height = '200px'
-    parent.style.backgroundColor = 'red'
-    target.style.backgroundColor = 'red'
-    lineaVertical.style.transform = 'rotate(-90deg)'
+    let optionsBox = parent.querySelector(".options")
+    let options = optionsBox.querySelectorAll(".option")
+    let priceBar = optionsBox.querySelector(".contenedor_rango_precios")
+    let optionsStyle = window.getComputedStyle(optionsBox)
+    let optionsheight = optionsStyle.getPropertyValue("height")
+    if (optionsheight == "0px") {
+        optionsBox.style.height = '200px'
+        lineaVertical.style.transform = 'rotate(-90deg)'
+        for (element of options) {
+            element.style.opacity = '100'
+        }
+        if (priceBar) {
+            priceBar.style.opacity = '100'
+        }
+    } else {
+        optionsBox.style.height = '0px'
+        lineaVertical.style.transform = 'rotate(0deg)'
+        for (element of options) {
+            element.style.opacity = '0'
+        }
+        if (priceBar) {
+            priceBar.style.opacity = '0'
+        }
+    }
 }
 
 for (let i = 0; i < boxes.length; i++) {
     boxes[i].addEventListener("click", alerta)
-    
-        // function (e) {
-        // const lineas = document.getElementsByClassName("vertical_line")
-        // if (click[i] == false) {
-        //     lineas[i].style.transform = 'rotate(-90deg)'
-        //     options[i].style.height = '150px'
-        //     // let child = options[i].children
-        //     // for (element in child) {
-        //     //     element.style.opacity = '0'
-        //     // }
-        //     click[i] = true
-        // } else {
-        //     lineas[i].style.transform = 'rotate(0deg)'
-        //     options[i].style.height = '0px'
-        //     // for (element in child) {
-        //     //     element.style.opacity = '1'
-        //     // }
-        //     click[i] = false
-        // }
-//    })
 }

@@ -15,7 +15,7 @@
 }
 
 .face {
-    background-color: brown;
+    background-color: rgb(255, 255, 255);
     width: 100%;
     height: 70px;
     display: flex;
@@ -60,7 +60,7 @@
 }
 
 .options {
-    background-color: white;
+    background-color: rgb(207, 207, 207);
     border-top:0.5px solid rgb(187, 187, 187);
     border-bottom:0.5px solid rgb(187, 187, 187);
     height: 0px;
@@ -79,6 +79,10 @@
     display: flex;
     align-items: center;
     padding-left: 20px;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 0.5s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 label {
@@ -93,12 +97,23 @@ label {
 
 .contenedor_rango_precios {
     width: 100%;
-    height: 20%;
+    height: 100%;
     display: flex;
     justify-content: space-evenly;
+    transition-property: all;
+    transition-duration: 0.5s;
+    opacity: 0;
 }
 
-.rango_precios {
+.price_bar {
+    -webkit-apperance: none;
     margin: 0px;
-    width: 50%;
+    width: 50px;
+}
+.price_bar::-webkit-slider-runnable-track {
+    background-color: white;
+}
+
+.price_bar::-webkit-slider-thumb {
+    -webkit-apperance: none;
 }
