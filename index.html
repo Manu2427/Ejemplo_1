@@ -33,7 +33,7 @@
                 <li class="hideOnMobile"> <a href="#"> niña</a> </li>
                 <li class="hideOnMobile"> <a href="#"> hola</a> </li>
                 <li class="hideOnMobile"> <a href="#"> hola</a> </li>
-                <li onclick=showSidebar()> <a href="#"><i class="fa-solid fa-bars"></i>  </a> </li>
+                <li id="bar_displayer" onclick=showSidebar()> <a href="#"><i class="fa-solid fa-bars"></i>  </a> </li>
             </ul>
 
             <div class="search">
@@ -63,10 +63,10 @@
 
         <div class="columna_filtros">
 
-            <div id="color" class="categoria">
+            <div class="categoria">
                 <div class="face">
                     <p class="title"> COLOR </p>
-                    <div class="mostrar_categorias box_btn">
+                    <div class="mostrar_categorias">
                         <div class="linea_horizontal"></div>
                         <div class="linea_vertical"></div>
                     </div>
@@ -95,7 +95,7 @@
 
                 <div class="face">
                     <p class="title"> TALLA </p>
-                    <div class="mostrar_categorias box_btn">
+                    <div class="mostrar_categorias">
                         <div class="linea_horizontal"></div>
                         <div class="linea_vertical vertical_line"></div>
                     </div>
@@ -118,11 +118,11 @@
 
             </div>
 
-            <div id="price" class="categoria">
+            <div class="categoria">
 
                 <div class="face">
                     <p class="title"> PRECIO </p>
-                    <div class="mostrar_categorias box_btn">
+                    <div class="mostrar_categorias">
                         <div class="linea_horizontal"></div>
                         <div class="linea_vertical vertical_line"></div>
                     </div>
@@ -130,7 +130,9 @@
 
                 <div class="options">
                     <div class="contenedor_rango_precios">
-                        <label> $ </label> <input class="price_bar" type="range" name="rango_precios" min="199" max="5999"> <label> $$$ </label>
+                        <div class="track">
+                            <div class="thumb"></div>
+                        </div>
                     </div>
                 </div>
 
@@ -142,7 +144,7 @@
 
                 <div class="face">
                     <p class="title"> CATEGORIA </p>
-                    <div class="mostrar_categorias box_btn">
+                    <div class="mostrar_categorias">
                         <div class="linea_horizontal"></div>
                         <div class="linea_vertical vertical_line"></div>
                     </div>
@@ -270,7 +272,9 @@
     </div>
            
 </main>
-    <script src="static/JS/mostrar_categorias.js"></script>
+    <script src="static/JS/mostrar-categorias.js"></script>
+    <script src="barra-deslizable.js"></script>
+    <script src="side-bar.js"></script>
     <script>
         function showSidebar(){
             const sidebar = document.querySelector('.sidebar')

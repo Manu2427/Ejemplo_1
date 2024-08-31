@@ -1,5 +1,5 @@
 
-const boxes = document.getElementsByClassName("box_btn")
+const boxes = document.getElementsByClassName("mostrar_categorias")
 
 function alerta (e) {
     let target = e.target

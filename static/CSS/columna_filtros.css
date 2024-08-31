@@ -11,7 +11,6 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    background-color: rgb(255, 255, 255);
 }
 
 .face {
@@ -33,7 +32,7 @@
     height: 30px;
     margin:0 5px 0 0;
     align-self: center;
-    background-color: black;
+    background-color: rgb(53, 53, 53);
     position: relative;
     display: flex;
     z-index: 1;
@@ -99,21 +98,37 @@ label {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     transition-property: all;
     transition-duration: 0.5s;
     opacity: 0;
 }
 
-.price_bar {
-    -webkit-apperance: none;
-    margin: 0px;
-    width: 50px;
+.track {
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    height: 5px;
+}
+
+.thumb {
+    background-color: black;
+    cursor: pointer;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: -7.5px;
+}
+/* .price_bar {
+    width: 50%;
 }
 .price_bar::-webkit-slider-runnable-track {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 .price_bar::-webkit-slider-thumb {
     -webkit-apperance: none;
-}
+    background-color: rgb(255, 2, 2);
+} */
